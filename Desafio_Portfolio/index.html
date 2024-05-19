@@ -63,12 +63,9 @@
          .div2{
             width: 50%;
             margin-top: 20px;
-            border-radius: 5%;
             height: 90%;
             padding: 0%;
             float: left;
-            background-color: #155a8f18;
-            
          }
 
          .div3{
@@ -90,7 +87,11 @@
         .sobre{
             color: #fff;
             font-size: 20px;
+        }
 
+        #conteudo{
+            margin-left: 35%;
+            border-bottom: -15%;
         }
         .display
         {
@@ -108,6 +109,7 @@
 
         .contato{
             margin-top: 3%;
+            margin-left: 5%;
             position: absolute;
             border: none;
             border-radius: 80px;
@@ -137,7 +139,7 @@
             width: 90%;
             height: 90%;
             padding: 0%;
-            margin-right: 20%;
+            margin-left: 12%;
             margin-top: 5%;
             
         }
@@ -152,6 +154,22 @@
             letter-spacing: 1px;
             justify-content: center;
            
+        }
+
+        .div#exp{
+            
+        }
+        .timeline{
+            position: relative;
+            max-width: 15%;
+        }
+
+        .carrossel_texto{
+            width: 100%;
+            height: 2%;
+            margin-right: -5%;
+            margin-top: -5%;
+
         }
 
         ::-webkit-scrollbar {
@@ -185,16 +203,16 @@
         <div class="conteudo">
              <div class="navbar">
                 <tr>
-                    <td><button class="botao">SOBRE MIM</button></td>
-                    <td><button class="botao">EXPERIÊNCIA</button></td>
-                    <td><button class="botao">CONTATO</button></td>                   
+                    <td><button class="botao" onclick="sobreMim()">SOBRE MIM</button></td>
+                    <td><button class="botao" onclick="Experencia()">EXPERIÊNCIA</button></td>
+                    <td><button class="botao" onclick="Contato()">CONTATO</button></td>                   
                 </tr> 
             </div> 
 
-            <div class="div">
+            <div class="div" id="intro">
                 <div class="div2">
                     <div class="intro">
-                        <p class="sobre" id="1" style="display: block;">Olá, sou a Saiury Nascimento, desenvolvedora de sistemas em Android, PHP, Python, C# e outros, com conhecimentos em Bancos de Dados, Certificações, ISO 27001 e Meios de Pagamento. Ajudo pequenos, médios e grandes negócios a colocar em prática boas ideias. Vamos conversar?<br></p>
+                        <p class="sobre" id="1" style="display: block;">Olá, meu nome é Saiury Nascimento e sou desenvolvedora de sistemas em Android, PHP, Python, C# e outros, com conhecimentos em Bancos de Dados, ISO 27001 e meios de pagamento. Atualmente trabalho com o desenvolvimento de aplicações em Android e ajudo pequenos, médios e grandes negócios a colocar em prática boas ideias. Vamos conversar?<br></p>
                         <button class="contato" value="CONTATO">CONTATO</button>
                     </div>
                 </div>
@@ -216,14 +234,108 @@
                             <td><img src="js.png" alt="" class="imagem"></td>
                             <td><img src="github.png" alt="" class="imagem"></td>
                          </tr>
-                    </div><br>
                 </div>
-            </div>            
-        </div>
+                <div class="carrossel_texto" id="intro">
+                    <p id="conteudo" class="sobre"></p>
+                </div>
+            </div></div>
+            <div class="div" id="exp" style="display: none;">
+                <div class="timeline">
+                    <div class="container">
+                        <div class="text-box" style="display: none;">
+                            <h2>T3 Tecnologia</h2>
+                            <small>2021-2023</small>
+                            <p>Realização de ...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="div" id="contato" style="display: none;"></div>
     </div>
     <footer>
+
+       
         
-        <script></script>
+        <script>
+
+        function sobreMim(){
+            const intro = document.getElementById("intro")
+            const exp = document.getElementById("exp")
+            const contato = document.getElementById("contato")
+            intro.style.display = 'block'
+            exp.style.display = 'none'
+            contato.style.display = 'none'
+
+        }
+        function Experencia(){
+            const intro = document.getElementById("intro")
+            const exp = document.getElementById("exp")
+            const contato = document.getElementById("contato")
+            intro.style.display = 'none'
+            exp.style.display = 'block'
+            contato.style.display = 'none'
+
+        }
+
+        function Contato(){
+            const intro = document.getElementById("intro")
+            const exp = document.getElementById("exp")
+            const contato = document.getElementById("contato")
+            intro.style.display = 'none'
+            exp.style.display = 'none'
+            contato.style.display = 'block'
+
+        }
+
+             document.addEventListener("DOMContentLoaded", function() {
+            const textsToType = ["DESENVOLVIMENTO DE SOFTWARE ", "GOOGLE CLOUD PLATFORM", "GERENCIAMENTO DE INFRAESTRUTURA E REDES", "MICROSOFT AZURE E 365"];
+            const outputElement = document.getElementById("conteudo");
+
+            function typeWriter(text, index, callback) {
+                if (index < text.length) {
+                    outputElement.innerHTML += text.charAt(index);
+                    setTimeout(function() {
+                        typeWriter(text, index + 1, callback);
+                    }, 100); // Ajuste a velocidade de digitação aqui (em milissegundos)
+                } else {
+                    callback();
+                }
+            }
+
+            function eraseText(callback) {
+                const currentText = outputElement.innerHTML;
+                if (currentText.length > 0) {
+                    outputElement.innerHTML = currentText.slice(0, -1);
+                    setTimeout(function() {
+                        eraseText(callback);
+                    }, 50); // Ajuste a velocidade de apagamento aqui (em milissegundos)
+                } else {
+                    callback();
+                }
+            }
+
+            function startTyping(index) {
+                if (index < textsToType.length) {
+                    typeWriter(textsToType[index], 0, function() {
+                        // Após a digitação, aguarde 1000ms (1 segundo) e inicie o apagamento
+                        setTimeout(function() {
+                            eraseText(function() {
+                                // Após o apagamento, avance para a próxima frase
+                                startTyping((index + 1) % textsToType.length);
+                            });
+                        }, 1000);
+                    });
+                } else {
+                    // Todas as frases foram exibidas, reinicie o loop
+                    startTyping(0);
+                }
+            }
+
+            // Inicie o processo quando a página for carregada
+            startTyping(0);
+        });
+        </script>
 
         </script>
     </footer>

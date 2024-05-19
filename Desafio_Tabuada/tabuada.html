@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tabuada JS</title>
     <style>
         *{
@@ -11,6 +11,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+
+        .conteudo{
+            margin: 1%;
+            justify-content: center;
+            width: 97.8%;
+            height: 2.5vw;
+            display: flex;
+            align-items: center;
+            
+        }
         .fundo{
             height: 100vh;
             background: rgb(56,0,141);
@@ -27,22 +37,30 @@
             color: #000000;
             min-width: 20%;
             min-height: 20%;
-            width: 70%;
-            height: 85%;
+            width: 50vw;
+            height: 40vw;
             justify-content: center;
             align-items: center;
            
         }
+
+        .resulta{
+            
+            margin: 1%;
+            height: 75%;
+           
+
+        }
         .botao{
-            padding: 10px;
             width: 20%;
+            height: 90%;
+            padding: 0.5%;
             border-radius: 2px;
             text-decoration: none;
             background-color: #38008d;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             cursor: pointer;
-            margin: 3px;
             border: none;
             color: #ffffff;
             
@@ -52,9 +70,12 @@
         }
 
         .escolha{
-            padding: 5px;
+            margin-left: 5%;
+            padding: 0.5%;
             font-size: 20px;
-            width: 75%;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 2%;
             text-align: left;
             justify-content: center;
             align-items: center;          
@@ -68,28 +89,36 @@
         }
 
         .res{
-            margin-top: 5px;
+            margin: 1vw;
+            padding: 0.2vw;
+            align-items: center;
             background-color: #f1efef;
-            padding: 15px;
-            font-size: 20px;
             text-align: center; 
             position: relative;
             border-radius: 2px;
             color: #000000;
-            border-top: 1px;
-            letter-spacing: 1px;
-            word-spacing: 15%;         
+            word-spacing: 1%;   
+            word-break: break-all;  
+            height: 92%;       
         }
+
 
     </style>
 </head>
 <body>
        <div class="fundo">
         <div class="tabuada">
+           
             <h1>TABUADA COM JS</h1>
+            <div class="conteudo">
                 <input type="number" placeholder="" class="escolha" id="number">
                 <input type="button" value="ENVIAR" class="botao"  id="botao" onclick="calculaTabuada()">
-                <p id="resultado" class="res" style="display: none;"></p>
+            </div>
+            
+            <div class="resulta">
+                <p id="resultado" class="res" style="display: none"></p>
+            </div>
+                
         </div>
     </div>
     <footer>

@@ -1,0 +1,157 @@
+*{
+    overflow: hidden;
+}
+
+.content{
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
+    display: grid;
+    z-index: -10;
+}
+
+.texto{
+    width: 55vw;
+    height: 5.5vw;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.texto h1{
+    font-size: 2.5vw;
+}
+
+.content.amarelo{
+    width: 100%;
+    height: 50vw;
+    background-color: #e4b404;
+    display: grid;
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+.content.branco{
+    width: 100%;
+    height: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+
+}
+
+.funcionamento{
+    font-size: 30px;
+    text-align: center;
+}
+
+.search{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55vw;
+    height: 3.5vw;
+    display: flex;
+}
+
+.icon{
+    
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 5%;
+    height: 90%;
+    background-color: white;
+}
+
+.material-symbols-outlined{
+    align-items: center;
+    padding-top: 3px;
+    color: rgba(122, 118, 122, 0.533);
+}
+
+.search input{
+    width: 90%;
+    height: 90%;
+    border-top-right-radius:  6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    justify-content: center;
+    padding-left: 5px;
+    text-decoration: none;
+    outline: none;
+}
+
+.card1, .card2, .card3{
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    width: 40vw;
+    height: 25vw;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+.card1, .card2,.card3{
+    margin-right: 1.5vw;
+}
+
+.card1{
+    margin-left: 2%;
+}
+
+.card3{
+
+    margin-right: 3%;
+
+}
+
+.card1 .imagem{
+    background-image: url(../../../assets/img/entregador.svg);
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+.card2 .imagem{
+    background-image: url(../../../assets/img/sacola.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.card3 .imagem{
+    background-image: url(../../../assets/img/brinde.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.imagem{
+    height: 10vw;
+    width: 10vw;
+    display: grid;
+    margin-bottom: 12px;
+
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+    height: 20px;
+    margin-bottom: 12px;
+
+}
+
+.textos{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}

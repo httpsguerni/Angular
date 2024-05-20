@@ -1,5 +1,9 @@
 .footer{
     border: 1px solid purple;
-    height: 10vw;
+    height: 15vw;
     width: 100vw;
+}
+.voltar{
+    border: 1px solid red;
+    
 }

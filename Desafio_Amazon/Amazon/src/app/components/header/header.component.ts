@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
+  frete ={
+    cidade: 'São Paulo',
+    cep:'01234-567'
+  };
+
+  cliente={
+    nome: 'Saiury'
+  }
 
 }

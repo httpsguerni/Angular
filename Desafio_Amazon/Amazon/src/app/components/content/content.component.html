@@ -11,15 +11,15 @@
                 <div class="checkbox"></div>
                 <div class="airpad"></div>
                 <div class="info">
-                    <h3>AirPods (3.ª geração)</h3>
-                    <h1 class="estoque">Em estoque</h1>
-                    <h1 class="vendido">Vendido por:&nbsp;<h1>Apple Store</h1> </h1>
-                    <h1 class="vendido">Cor:&nbsp;<h1>Branco</h1> </h1>
-                    <h1 class="vendido">Dimensões:&nbsp;<h1>4.6 x 2.1 x 5.4 cm</h1> </h1>
+                    <h3>{{airpod.nome}}</h3>
+                    <h1 class="estoque">{{airpod.status}}</h1>
+                    <h1 class="vendido">Vendido por:&nbsp;<h1>{{airpod.vendido}}</h1> </h1>
+                    <h1 class="vendido">Cor:&nbsp;<h1>{{airpod.cor}}</h1> </h1>
+                    <h1 class="vendido">Dimensões:&nbsp;<h1>{{airpod.dimensoes}}</h1> </h1>
                 </div>
                 <div class="preco">
-                    <h3>R$ 1.598,00</h3>
-                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R$ 159,80 sem juros</h1>
+                    <h3>R$ {{preco_a}}</h3>
+                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R$ {{parcelado_a}} sem juros</h1>
                 </div>
             </div>
             <hr>
@@ -29,15 +29,15 @@
                 <div class="checkbox"></div>
                 <div class="apple"></div>
                 <div class="info">
-                    <h3>Apple iPhone 15 (128 GB) — Preto</h3>
-                    <h1 class="estoque">Em estoque</h1>
-                    <h1 class="vendido">Vendido por:&nbsp;<h1>Apple Store</h1> </h1>
-                    <h1 class="vendido">Cor:&nbsp;<h1>Grafite</h1> </h1>
-                    <h1 class="vendido">Dimensões:&nbsp;<h1>147.6 x 71.6 x 7.8 cm</h1> </h1>
+                    <h3>{{iphone.nome}}</h3>
+                    <h1 class="estoque">{{iphone.status}}</h1>
+                    <h1 class="vendido">Vendido por:&nbsp;<h1>{{iphone.status}}</h1> </h1>
+                    <h1 class="vendido">Cor:&nbsp;<h1>{{iphone.cor}}</h1> </h1>
+                    <h1 class="vendido">Dimensões:&nbsp;<h1>{{iphone.dimensoes}}</h1> </h1>
                 </div>
                 <div class="preco">
-                    <h3>R$ 4.848,00</h3>
-                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R$ 484,80 sem juros</h1>
+                    <h3>R$ {{preco_i}}</h3>
+                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R${{parcelado_i}} sem juros</h1>
                 </div>
             </div>
         </div>
@@ -47,15 +47,15 @@
                 <div class="checkbox"></div>
                 <div class="tv"></div>
                 <div class="info">
-                    <h3>Samsung Smart TV 55" UHD 4K</h3>
-                    <h1 class="estoque">Em estoque</h1>
-                    <h1 class="vendido">Vendido por:&nbsp;<h1>Samsung</h1> </h1>
-                    <h1 class="vendido">Cor:&nbsp;<h1>Preto</h1> </h1>
-                    <h1 class="vendido">Dimensões:&nbsp;<h1>138.6 x 82.8 x 15.9 cm</h1> </h1>
+                    <h3>{{tv.nome}}</h3>
+                    <h1 class="estoque">{{tv.status}}</h1>
+                    <h1 class="vendido">Vendido por:&nbsp;<h1>{{tv.vendido}}</h1> </h1>
+                    <h1 class="vendido">Cor:&nbsp;<h1>{{tv.cor}}</h1> </h1>
+                    <h1 class="vendido">Dimensões:&nbsp;<h1>{{tv.dimensoes}}</h1> </h1>
                 </div>
                 <div class="preco">
-                    <h3>R$ 2.749,00</h3>
-                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R$ 274,90 sem juros</h1>
+                    <h3>R$ {{preco_t}}</h3>
+                    <h1 class="metodo">à vista no Pix e boleto ou em até 10x de R$ {{parcelado_t}} sem juros</h1>
                 </div>
             </div>
         </div>
@@ -65,11 +65,11 @@
                 <div class="checkbox"></div>
                 <div class="geladeira"></div>
                 <div class="info">
-                    <h3>Geladeira Frost Free Brastemp 375L</h3>
-                    <h1 class="nestoque">Estoque não disponível</h1>
-                    <h1 class="vendido">Vendido por:&nbsp;<h1>Brastemp</h1> </h1>
-                    <h1 class="vendido">Cor:&nbsp;<h1>Inox</h1> </h1>
-                    <h1 class="vendido">Dimensões:&nbsp;<h1>74 x 64 x 180 cm</h1> </h1>
+                    <h3>{{geladeira.nome}}</h3>
+                    <h1 class="nestoque">{{geladeira.status}}</h1>
+                    <h1 class="vendido">Vendido por:&nbsp;<h1>{{geladeira.vendido}}</h1> </h1>
+                    <h1 class="vendido">Cor:&nbsp;<h1>{{geladeira.cor}}</h1> </h1>
+                    <h1 class="vendido">Dimensões:&nbsp;<h1>{{geladeira.dimensoes}}</h1> </h1>
                 </div>
                 <div class="preco">
                     <h3>R$ 3.199,00</h3>
@@ -80,10 +80,13 @@
         </div>
         <div class="pagamento">
             <div class="soma">
-               <h1>Total: R$ 12.394,00</h1>
+               <h1>Total: R$ {{total}}</h1>
             </div>
-            <div class="frete"> <h1>Total + Frete: R$ 12.414,00</h1></div>
-           
+            <div class="frete" *ngIf="frete.cidade == 'São Paulo' || frete.cidade == 'Rio de Janeiro' || frete.cidade == 'Minas Gerais' || frete.cidade == 'Espírito Santo' else contrario" > <h1>Total + Frete: R$  {{frete_sudeste}}</h1></div>
         </div>
+
+        <ng-template #contrario>
+            <div class="frete"> <h1>Total + Frete: R$ {{frete_outros}}</h1></div>
+        </ng-template>
     </div>
 </div>

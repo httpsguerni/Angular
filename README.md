@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 Desafio Amazon:
-![image](https://github.com/httpsguerni/Angular/assets/109919281/3a3b7014-cb08-4f6c-943d-3980abd38088)
+![image](https://github.com/httpsguerni/Angular/assets/109919281/a2ca68d2-0015-4025-8e32-667cd565242f)
 
 Desafio Mané Delivery:
 ![image](https://github.com/httpsguerni/Angular/assets/109919281/4ff1256b-df63-4137-b9d1-828fe8b97ad8)

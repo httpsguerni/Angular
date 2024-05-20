@@ -1,9 +1,90 @@
 .footer{
-    border: 1px solid purple;
-    height: 15vw;
+    margin-bottom: 1px;
     width: 100vw;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #232F3E;
 }
 .voltar{
-    border: 1px solid red;
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: #37475A;
+    color: white;
+    font-size: 14px;
     
+}
+
+.about{
+    margin-top: 2%;
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+
+}
+
+.card{
+    margin-top: 2.7vw;
+    display: inline-table;
+    width: 10%;
+    height: 60%;
+    color: white;
+    margin-left: 10%;
+    word-spacing: 80%;
+    line-height: 1.4;
+    font-size: 15px;
+    align-items: start;
+}
+
+.card p{
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.condicoes{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 4vw;
+    background-color: #232F3E;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(../../../assets/img/logo.png);
+    width: 10%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.br{
+    margin-left: 20%;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 10%;
+    height: 60%;
+    display: flex;
+}
+
+.br p{
+    overflow-y: hidden;
+    color: white;
+}
+
+.brasil{
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/img/brasil.png);
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 5%;
 }

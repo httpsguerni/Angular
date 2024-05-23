@@ -1,0 +1,435 @@
+.fundo {
+    background: linear-gradient(90deg, rgba(2, 26, 77, 1) 0%, rgba(66, 25, 126, 1) 100%);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 72vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    height: 75%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introducao {
+    width: 80%;
+    height: 70%;
+}
+
+.ola {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.ola h1 {
+    width: 63%;
+    padding-right: 1%;
+    padding-left: 1%;
+    font-family: "Praise", cursive;
+    font-size: 7vh;
+    background: linear-gradient(90deg, rgba(2, 26, 77, 1) 0%, rgba(66, 25, 126, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+hr {
+    border: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    align-items: center;
+    background: #4c3795;
+}
+
+.texto {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.texto h2 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.conversa {
+    height: 15%;
+    width: 100%;
+}
+
+.conversa h2 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    text-align: center;
+}
+
+.contato {
+    margin-top: 1%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    color: white;
+    font-size: 1.2vw;
+    background: #4c3795;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    width: 20%;
+    font-weight: 200;
+
+}
+
+.btn:hover {
+    background: #23068b;
+    cursor: pointer;
+}
+
+
+.mouse {
+
+    height: 5%;
+    width: 100%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.scroll::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 5px;
+    }
+
+    to {
+        opacity: 0;
+        top: 25px;
+    }
+}
+
+.sobre {
+    position: relative;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre .conteudo {
+    border-radius: 5px;
+    width: 99%;
+    height: 99%;
+
+}
+
+.sobre .introducao {
+    width: 80%;
+    height: 80%;
+}
+
+.sobre .ola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .introducao hr {
+    border: 0;
+    height: 1px;
+    width: 20%;
+    background: #4c3795;
+}
+
+.introducao .texto {
+    text-align: center;
+}
+
+.introducao .cards {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .texto {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .texto h2 {
+    font-size: 100%;
+}
+
+.habilidades {
+    width: 40%;
+    margin: 1%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    column-count: 1;
+}
+
+
+.habilidades h2 {
+    text-align: left;
+    font-size: 105%;
+    font-weight: 200;
+}
+
+.habilidades .titulo {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    width: 95%;
+}
+
+.skill {
+    padding: 3%;
+    margin-bottom: 1.2rem;
+    margin-right: 1.2rem;
+    font-size: 75%;
+    background: rgba(181, 151, 236, 0.801);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.skill:hover {
+    background: #4c3795;
+    cursor: pointer;
+}
+
+.fundo .projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos {
+    margin-top: 5%;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.bloco {
+    background-color: white;
+    border-radius: 5px;
+    margin: 2%;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco .card {
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    margin-top: 8%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.url {
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.links a {
+    max-height: 5%;
+    font-size: 1vw;
+    font-weight: 200;
+    line-height: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #23068b;
+}
+
+.links a:hover {
+    cursor: pointer;
+}
+
+.projetos hr {
+    border: 0;
+    height: 1px;
+    width: 20%;
+    background: #4c3795;
+
+}
+.social {
+    margin-top: 8%;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 7.5% 50%;
+    grid-template-rows: repeat(3, 15%);
+    grid-column-gap: 5px;
+    grid-row-gap: 5%;
+    }
+    
+    .div1
+     { grid-area: 1 / 1 / 2 / 2;
+        background: url(../../../assets/github.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+    }
+    .div2 
+    { grid-area: 2 / 1 / 3 / 2;
+          background: url(../../../assets/linkedin.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+    .div3
+     { grid-area: 3 / 1 / 4 / 2; 
+        background: url(../../../assets/mail.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .div1:hover, .div2:hover,.div3:hover{
+        transform: scale(1.2);
+      }
+    .div4 
+    { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-area: 1 / 2 / 2 / 3; 
+    }
+    .div5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-area: 2 / 2 / 3 / 3;  
+
+        }
+    .div6 { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-area: 3 / 2 / 4 / 3;
+     }
+    
+
+
+.redes {
+    font-size: 1em;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.redes .icones {
+    height: 80%;
+    width: 15%;
+    display: grid;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+
+.div4 a, .div5 a , .div6 a {
+    font-size: 1vw;
+    font-weight: 200;
+    text-decoration: none;
+    cursor: pointer;
+    color: #23068b;
+}

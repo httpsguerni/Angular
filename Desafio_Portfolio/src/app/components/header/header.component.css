@@ -1,0 +1,52 @@
+.content{
+    height: 7vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2%;
+    width: 12vw;
+    height: 90%;
+    background-position: center;
+    background-image: url(../../../assets/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+    display: flex;
+    
+}
+
+.card{
+    align-content: center;
+    margin-left: 1%;
+    border: 1px solid rgb(206, 204, 204);
+    line-height: 1.5;
+    width: 12vh;
+    height: 80%;
+    font-size: 15px;
+    color: #4c3795;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.card:hover{
+   background-color: #eae5fa;
+   cursor: pointer;
+}
+

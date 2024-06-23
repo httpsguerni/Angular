@@ -1,0 +1,43 @@
+.container{
+    height: 1320px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    background-image: url(../../../assets/img/menu_inicio.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 680px;
+    width: 100%;
+}
+
+.education{
+    margin-top: 150px;
+    background: #004A8C;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text{
+    color: white;
+    width: 50%;
+}
+
+.text.one{
+    font-size:  54px;
+    font-weight: 700;
+    margin-right: 25px;
+    border-right: 5px solid #F6921E;
+ }
+
+ .text.two{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+ }

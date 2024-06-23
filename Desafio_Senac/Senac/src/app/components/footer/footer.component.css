@@ -1,0 +1,65 @@
+.container{
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    display: block;
+}
+
+.info{
+    background-color: #004A8C;
+    height: 250px;
+    display: flex;
+    align-items: center;    
+
+}
+
+.senac{
+    background-position: center;
+    background-image: url(../../../assets/img/senac_branco.png);
+    width: 30%;
+    height: 114px;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    
+}
+
+.cursos{
+    width: 45%;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-weight: 700;
+   
+}
+.cursos li{
+    line-height: 24.2px;
+    list-style-type: none;
+}
+
+
+.redes{
+    width: 326px;
+    height: 206px;
+    background-image: url(../../../assets/img/redes.png);
+    background-repeat: no-repeat;
+}
+
+.copyright{
+    height: 50px;
+    background-color: #003667;
+    display: flex; 
+    gap: 8px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 33.3%;
+    color: white;
+    text-align: center;
+  
+}
+
+
+
+

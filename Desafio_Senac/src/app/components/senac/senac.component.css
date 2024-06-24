@@ -1,0 +1,71 @@
+.container{
+    height: 1320px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    background-image: url(../../../assets/img/sky.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    margin-top: 20px;
+
+
+}
+
+.navigation{
+    background: #004a8c;
+    height: 31px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+   
+}
+
+.navigation a{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.home{
+    text-decoration: underline;
+}
+
+.projects{
+    height: 621px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 445px;
+
+}
+.wedo{
+    width: 60%;
+    margin-left: 1%;
+}
+
+.students{
+    background-image: url(../../../assets/img/students.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 626px;
+}
+
+.tags{
+    background-image: url(../../../assets/img/tags.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 155px;
+
+}

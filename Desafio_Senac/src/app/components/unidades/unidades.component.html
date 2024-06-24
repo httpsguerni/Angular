@@ -1,0 +1,49 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<div class="container">
+    <div class="navigation"><a class="home">{{navigation.home}}</a> <a>{{navigation.bigger}}</a><a>{{navigation.unidades}} </a></div>
+    <div class="img"></div>
+    <a [ngStyle]="title_style">{{navigation.unidades}}</a>
+    <div class="units">
+        <div class="card um"> 
+            <div class="title">
+                {{navigation.capital}}
+            </div>
+            <div class="content" *ngFor="let unidade of unidades">
+                <ul *ngIf="unidade.regiao === 'Capital'">
+                    <li >
+                        {{ unidade.nome }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                {{navigation.grande}}
+            </div>
+            <div class="content" *ngFor="let unidade of unidades">
+                <ul *ngIf="unidade.regiao === 'Grande São Paulo e Litoral'">
+                    <li >
+                        {{ unidade.nome }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">
+                {{navigation.interior}}
+            </div>
+            <div class="content" *ngFor="let unidade of unidades">
+                <ul *ngIf="unidade.regiao === 'Interior'">
+                    <li >
+                        {{ unidade.nome }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+.container{
+    height: 1320px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: #E4E8F0;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    background: #004a8c;
+    height: 31px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+   
+}
+
+.navigation a{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.home{
+    text-decoration: underline;
+}
+
+.courses{
+    background-image: url(../../../assets/img/cursos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    width: 100%;
+}
+
+.list{
+    height: 447px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    border-radius: 0.625rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 288px;
+    height: 342px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+  }
+  
+
+.card.ard{
+    margin-left: 5%;
+    background-image: url(../../../assets/img/ard.png);
+}
+
+.card.prg{
+    margin-right: 5%;
+    background-image: url(../../../assets/img/prg.png);
+}
+
+.card.iot{
+    background-image: url(../../../assets/img/iot.png);
+}
+
+.card.web{
+    background-image: url(../../../assets/img/web.png);
+}

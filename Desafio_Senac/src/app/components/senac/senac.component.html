@@ -1,0 +1,17 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<div class="container">
+    <div class="navigation"><a class="home">{{navigation.home}}</a> <a>{{navigation.senac}} </a></div>
+    <div class="sky"></div>
+    <div class="projects">
+        <div class="card wedo"> <br>
+            <div [ngStyle]="wedo_title"> {{wedo.title}}</div>
+            <div [ngStyle]="wedo_content">{{wedo.content1}} </div>
+            <div class="tags"></div>
+            <div [ngStyle]="wedo_content">{{wedo.content2}} </div>
+        </div>
+        <div class="card students"></div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    background-color: #E4E8F0;
+}
+.card{
+    background-image: url(../../../assets/img/login_card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 681.56px;
+}

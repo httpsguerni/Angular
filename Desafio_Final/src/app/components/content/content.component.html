@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="data">
+        <div class="insert">
+            <input type="text" class="texto" placeholder="Fazer compras, enviar relatório..." #tarefa>
+            <button (click)="addTarefa(tarefa.value)">{{button.add}}</button>
+        </div>
+        <div class="table">
+            <ul *ngFor="let item of list">
+                <li>{{item.name}}
+                </li> 
+                <button name="" (click)="addTarefa(tarefa.value)">{{button.add}}</button>
+                <button name="" (click)="removeTarefa(item.id)">{{button.remove}}</button>
+                <button (click)="loadData()">Carregar</button>
+            </ul>
+        </div>
+    </div>
+</div>

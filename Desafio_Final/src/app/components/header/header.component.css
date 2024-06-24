@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    padding: 0 27px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 80px;
+}
+
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a{
+    margin-right: 2%;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24.2px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: #3c948e;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+

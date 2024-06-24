@@ -6,9 +6,10 @@ import { UnidadesComponent } from './components/unidades/unidades.component';
 import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
-    {path:'home',component: ContentComponent},
+    {path:'',component: ContentComponent},
     {path:'cursos',component: CursosComponent},
     {path:'senac',component: SenacComponent},
     {path:'unidades',component: UnidadesComponent},
-    {path: 'login', component: LoginComponent}
+    {path: 'login', component: LoginComponent},
+    
 ];

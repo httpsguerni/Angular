@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -8,31 +8,37 @@ import { Component } from '@angular/core';
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
-export class ContentComponent {
+export class ContentComponent implements OnInit {
 
-  list:any[] =[];
+  list: any[] = [];
   session: any;
 
-addTarefa(item:string) {
-
-let newItem = { id: this.list.length + 1, name: item };
-this.list.push(newItem);
-localStorage.setItem('session', JSON.stringify(this.list));
-
-}
-
-removeTarefa(id:number){
-this.list = this.list.filter(item=>item.id!==id)
-}
-
-  button={
+  button = {
     add: 'ADICIONAR',
     remove: 'REMOVER'
   }
 
-  loadData(){
+  ngOnInit() {
+    this.loadData();
+  }
+
+  addTarefa(item: string) {
+    let newItem = { id: this.list.length + 1, name: item };
+    this.list.push(newItem);
+    localStorage.setItem('session', JSON.stringify(this.list));
+  }
+
+  removeTarefa(id: number) {
+    this.list = this.list.filter(item => item.id !== id);
+    localStorage.setItem('session', JSON.stringify(this.list));
+  }
+
+  loadData() {
     let data: any = localStorage.getItem('session');
-    this.session = JSON.parse(data);
+    if (data) {
+      this.list = JSON.parse(data);
+    } else {
+      this.list = [];
+    }
   }
 }
-
